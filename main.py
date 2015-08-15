@@ -112,12 +112,12 @@ class punto:
 #FUNCIONS
 
 def indice_a_pos(indice):
-	pos_y = indice / NUM_CADROS_ALTO
+	pos_y = indice / NUM_CADROS_ANCHO
 	pos_x = indice - NUM_CADROS_ANCHO*pos_y
 	return punto(pos_x,pos_y)
 	
 def pos_a_indice(pos):
-	indice = pos[0] + pos[1] * NUM_CADROS_ALTO
+	indice = pos[0] + pos[1] * NUM_CADROS_ANCHO
 	return indice
 
 def indices_colindantes(indice):
